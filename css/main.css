@@ -1,0 +1,150 @@
+/* @import url(http://fonts.googleapis.com/css?family=Source+Serif+Pro:600,700&subset=latin,latin-ext); */
+
+html {
+    background-color: #f8de00;
+    color:  #4f2500;}
+
+#content {
+border-right: 1px solid #442200;
+}
+
+section {
+    color:  #4f2500;
+    background-color: #fff;
+    padding: 0 20px 20px 20px;
+    border-top: 5px solid #f8de00;
+}
+/* section:first-of-type { border-top: 0; padding-top: 20px; } */
+/* section:last-of-type { padding-bottom: 20px; } */
+
+fieldset[role="search"] {
+margin: 0px;
+padding: 0px;
+}
+
+fieldset[role="search"] input[type="text"] {
+border: none;
+display: inline;
+padding: 0px;
+height: 24px;
+}
+
+fieldset[role="search"] input[type="submit"] {
+background-color: #46c900;
+background-image: url(../obrazy/magnifier.png);
+background-position: center;
+background-repeat: no-repeat;
+border-width: 0px;
+display: inline;
+height: 24px;
+margin: 0;
+padding: 0;
+}
+
+/*
+Barwy jesieni
+niebieski #2844c8
+zielony #46c900
+żółty #f8de00
+czerwony #d83900
+brązowy #4f2500
+*/
+
+h1, h2, h3, h4 {
+    font-family: 'Source Serif Pro';
+    font-weight: 700;
+}
+
+aside > #menu {
+background-color: #fff;
+padding:  10px;
+margin: 20px 0;
+}
+
+aside > #menu h4 {
+margin:0;
+}
+
+aside ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+header h1 span {
+display: none;
+}
+
+header nav {
+    margin-top: 77px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+nav li {
+display: inline-block;
+background-color: #fff;
+color: #222;
+padding: 10px;
+width: 80px;
+margin-bottom: 4px;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+}
+span#title {
+    font-size: 100px;
+/*
+Kaushan Script
+Joti One
+http://www.dafont.com/deborstel-brush.font?text=Przedszkole+nr+241+Trojdenek&fpp=100&back=theme
+http://www.dafont.com/font-comment.php?file=bolide&text=Przedszkole+nr+241+Trojdenek&fpp=100&back=theme
+
+
+ Fredericka the Great
+Cabin Sketch
+Monoton
+ */
+}
+
+.read-more {
+text-align: right;
+}
+#big-logo {
+ max-width: none;
+   height: 150px;
+    width: 150px;
+}
+
+
+.show-on-mobiles { display: none; }
+@media screen and (max-width: 568px) { /* Stack anything that isn’t full-width on smaller screens */
+  .show-on-mobiles { display: block !important; }
+}
+
+#wiersz-komputer {
+position: relative;
+}
+
+#wiersz-komputer img {
+position: absolute;
+top: 120px
+}
+
+#wiersz-komputer pre {
+position: absolute;
+top: 0px;
+font-family: sans;
+}
+
+/* * {border: solid 1px #ddd;} */
+.navicon {
+	height: 6px;
+	width: 34px;
+	margin: 20px;
+	border-top: 18px double #000;
+	border-bottom: 6px solid #000;
+	font-size:0;
+}

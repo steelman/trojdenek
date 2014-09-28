@@ -2,7 +2,8 @@
 
 html {
     background-color: #f8de00;
-    color:  #4f2500;}
+    color:  #4f2500;
+}
 
 #content {
 border-right: 1px solid #442200;
@@ -86,7 +87,7 @@ display: inline-block;
 background-color: #fff;
 color: #222;
 padding: 10px;
-width: 80px;
+width: 120px;
 margin-bottom: 4px;
 }
 

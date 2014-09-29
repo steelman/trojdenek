@@ -9,11 +9,15 @@ html {
 border-right: 1px solid #442200;
 }
 
-section {
+#news section {
     color:  #4f2500;
     background-color: #fff;
     padding: 0 20px 20px 20px;
-    border-top: 5px solid #f8de00;
+    margin-bottom: 20px;
+    border-top: 2px solid #7d7000;
+    border-left: 2px solid #7d7000;
+    border-bottom: 2px solid #ffef66;
+    border-right: 2px solid  #ffef66;
 }
 /* section:first-of-type { border-top: 0; padding-top: 20px; } */
 /* section:last-of-type { padding-bottom: 20px; } */
@@ -51,6 +55,25 @@ czerwony #d83900
 brązowy #4f2500
 */
 
+h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0.83em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 0;
+    padding: 1.33em 0;
+}
+
+
 h1, h2, h3, h4 {
     font-family: 'Source Serif Pro';
     font-weight: 700;
@@ -60,10 +83,32 @@ aside > #menu {
 background-color: #fff;
 padding:  10px;
 margin: 20px 0;
+    border-top: 2px solid #7D7000;
+    border-left: 2px solid #7D7000;
+    border-bottom: 2px solid #ffef66;
+    border-right: 2px solid  #ffef66;
 }
 
 aside > #menu h4 {
 margin:0;
+padding-top: 0;
+}
+
+aside li a {
+    position: relative;
+}
+
+
+aside li.current a:before {
+    content: "";
+    border-color: rgba(248,222,0,0) rgba(248,222,0,0) rgba(0,0,0,0)  #f8de00;
+    border-style: solid;
+    border-width: 10px;
+    height: 0;
+    widht: 0;
+    position: absolute;
+    top: -2px;
+    left: -12px;
 }
 
 aside ul {
@@ -115,9 +160,21 @@ Monoton
  */
 }
 
+*|*:link {
+    text-decoration: none;
+    color: #2844c8;
+}
+
+*|*:visited {
+    text-decoration: none;
+    color: #246600;
+}
+
+
 .read-more {
 text-align: right;
 }
+
 #big-logo {
  max-width: none;
    height: 150px;

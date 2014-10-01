@@ -5,6 +5,12 @@ html {
     color:  #4f2500;
 }
 
+footer {
+    background-color: #4f2500;
+    color:  #bfab00;
+    font-size: 0.8em;
+}
+
 #content {
 border-right: 1px solid #442200;
 }
@@ -45,15 +51,6 @@ height: 24px;
 margin: 0;
 padding: 0;
 }
-
-/*
-Barwy jesieni
-niebieski #2844c8
-zielony #46c900
-żółty #f8de00
-czerwony #d83900
-brązowy #4f2500
-*/
 
 h1 {
     font-size: 2em;
@@ -105,7 +102,7 @@ aside li.current a:before {
     border-style: solid;
     border-width: 10px;
     height: 0;
-    widht: 0;
+    width: 0;
     position: absolute;
     top: -2px;
     left: -12px;
@@ -201,6 +198,17 @@ position: absolute;
 top: 0px;
 font-family: sans;
 }
+
+
+/*
+Barwy jesieni
+http://colrd.com/create/image-dna/
+niebieski #2844c8
+zielony #46c900
+żółty #f8de00
+czerwony #d83900
+brązowy #4f2500
+*/
 
 /* * {border: solid 1px #ddd;} */
 .navicon {

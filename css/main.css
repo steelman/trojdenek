@@ -6,13 +6,21 @@ html {
 }
 
 footer {
-    background-color: #4f2500;
+    /* background-color: #4f2500; */
+    background-color: #090f2b;
     color:  #bfab00;
     font-size: 0.8em;
 }
 
+#adres {
+margin-top: 20px
+}
 #content {
 border-right: 1px solid #442200;
+}
+
+#content {
+padding-top: 0;
 }
 
 #news section {
@@ -31,6 +39,10 @@ border-right: 1px solid #442200;
 fieldset[role="search"] {
 margin: 0px;
 padding: 0px;
+    border-top: 2px solid #7D7000;
+    border-left: 2px solid #7D7000;
+    border-bottom: 2px solid #ffef66;
+    border-right: 2px solid  #ffef66;
 }
 
 fieldset[role="search"] input[type="text"] {
@@ -76,10 +88,15 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 
+aside {
+padding-top: 0px;
+}
+
 aside > #menu {
-background-color: #fff;
+color: #fff;
+background-color: #46c900;
 padding:  10px;
-margin: 20px 0;
+margin: 23px 0;
     border-top: 2px solid #7D7000;
     border-left: 2px solid #7D7000;
     border-bottom: 2px solid #ffef66;
@@ -90,6 +107,18 @@ aside > #menu h4 {
 margin:0;
 padding-top: 0;
 }
+
+/* aside > #menu *|*:link { */
+/*     text-decoration: none; */
+/*     color: #2844c8; */
+/*     font-wight */
+/* } */
+
+/* aside > #menu *|*:visited { */
+/*     text-decoration: none; */
+/*     color: #551A8B; */
+/* } */
+
 
 aside li a {
     position: relative;
@@ -108,6 +137,16 @@ aside li.current a:before {
     left: -12px;
 }
 
+/* http://stackoverflow.com/questions/14068103/disable-antialising-when-scaling-images */
+img.pixelart {
+    image-rendering: optimizeSpeed;             /* FUCK SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
 aside ul {
 list-style: none;
 padding: 0;
@@ -118,25 +157,42 @@ header h1 span {
 display: none;
 }
 
+header h1 a,
+header h1 {
+font-size: 0pt;
+}
+
 header nav {
-    margin-top: 77px;
+    margin-top: 55px;
     text-align: center;
     vertical-align: middle;
 }
 
+#foobar {
+margin-top: 16px;
+}
+
 nav li {
 display: inline-block;
-background-color: #fff;
+background-color: #f8de00;
 color: #222;
 padding: 10px;
-width: 120px;
+/* width: 120px; */
+/* height: 120px; */
 margin-bottom: 4px;
+vertical-align: middle;
+font-size: 8pt;
+}
+
+nav li img {
+    width: 128px;
+    height: 128px;
 }
 
 nav li:nth-child(4n+1):hover { background-color: #d83900; color: #fff; }
 nav li:nth-child(4n+2):hover { background-color: #4f2500; color: #fff; }
-nav li:nth-child(4n+3):hover { background-color: #2844c8; color: #f8de00; }
-nav li:nth-child(4n+4):hover { background-color: #46c900; color: #4f2500; }
+nav li:nth-child(4n+3):hover { background-color: #46c900; color: #4f2500; }
+nav li:nth-child(4n+4):hover { background-color: #2844c8; color: #f8de00; }
 
 nav ul {
 margin: 0;
@@ -159,12 +215,12 @@ Monoton
 
 *|*:link {
     text-decoration: none;
-    color: #2844c8;
+    color: #246600;
 }
 
 *|*:visited {
     text-decoration: none;
-    color: #246600;
+    color: #551A8B ;
 }
 
 
@@ -173,6 +229,7 @@ text-align: right;
 }
 
 #big-logo {
+padding-top: 32px;
  max-width: none;
    height: 150px;
     width: 150px;

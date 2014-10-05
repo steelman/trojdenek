@@ -190,7 +190,7 @@ nav li img {
 }
 
 nav li:nth-child(4n+1):hover { background-color: #d83900; color: #fff; }
-nav li:nth-child(4n+2):hover { background-color: #4f2500; color: #fff; }
+nav li:nth-child(4n+2):hover { background-color: #7b512c; color: #fff; }
 nav li:nth-child(4n+3):hover { background-color: #46c900; color: #4f2500; }
 nav li:nth-child(4n+4):hover { background-color: #2844c8; color: #f8de00; }
 

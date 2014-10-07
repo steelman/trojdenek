@@ -1,37 +1,68 @@
-/* @import url(http://fonts.googleapis.com/css?family=Source+Serif+Pro:600,700&subset=latin,latin-ext); */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext);
 
 html {
+    font-family: "Lato", "sans-serif";
     background-color: #f8de00;
     color:  #4f2500;
 }
 
-footer {
-    /* background-color: #4f2500; */
-    background-color: #090f2b;
-    color:  #bfab00;
-    font-size: 0.8em;
+/* sticky footer */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body.post > div.grid {
+    min-height: 100%;
+    padding-top: 220px;
+    margin-top: -188px;
 }
 
+
+header nav {
+    margin-top: 55px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.depressed {
+    background-color: #fff;
+    border-top: 2px solid #7D7000;
+    border-right: 2px solid  #ffef66;
+    border-bottom: 2px solid #ffef66;
+    border-left: 2px solid #7D7000;
+    padding: 20px;
+}
+
+footer {
+    background-color: #090f2b;
+    color:  #bfab00;
+    font-size: 11px;
+    height: 188px;
+}
 #adres {
 margin-top: 20px
+}
+
+
+section p:first-of-type {
+margin-top: 0;
 }
 #content {
 border-right: 1px solid #442200;
 }
 
 #content {
-padding-top: 0;
+    padding-top: 0;
+}
+
+#news > h1 {
+    height: 34px;
 }
 
 #news section {
-    color:  #4f2500;
-    background-color: #fff;
     padding: 0 20px 20px 20px;
     margin-bottom: 20px;
-    border-top: 2px solid #7d7000;
-    border-left: 2px solid #7d7000;
-    border-bottom: 2px solid #ffef66;
-    border-right: 2px solid  #ffef66;
 }
 /* section:first-of-type { border-top: 0; padding-top: 20px; } */
 /* section:last-of-type { padding-bottom: 20px; } */
@@ -83,24 +114,15 @@ h4 {
 }
 
 
-h1, h2, h3, h4 {
-    font-family: 'Source Serif Pro';
-    font-weight: 700;
-}
-
-aside {
-padding-top: 0px;
+address {
+    font-style: normal;
 }
 
 aside > #menu {
-color: #fff;
-background-color: #46c900;
-padding:  10px;
-margin: 23px 0;
-    border-top: 2px solid #7D7000;
-    border-left: 2px solid #7D7000;
-    border-bottom: 2px solid #ffef66;
-    border-right: 2px solid  #ffef66;
+    color: #fff;
+    background-color: #46c900;
+    padding:  10px;
+    margin: 23px 0 85px;
 }
 
 aside > #menu h4 {
@@ -119,6 +141,10 @@ padding-top: 0;
 /*     color: #551A8B; */
 /* } */
 
+
+aside li a:hover {
+    color: #fff;
+}
 
 aside li a {
     position: relative;
@@ -153,20 +179,10 @@ padding: 0;
 margin: 0;
 }
 
-header h1 span {
-display: none;
+aside li {
+margin-top: 0.2em;
 }
 
-header h1 a,
-header h1 {
-font-size: 0pt;
-}
-
-header nav {
-    margin-top: 55px;
-    text-align: center;
-    vertical-align: middle;
-}
 
 #foobar {
 margin-top: 16px;
@@ -195,22 +211,8 @@ nav li:nth-child(4n+3):hover { background-color: #46c900; color: #4f2500; }
 nav li:nth-child(4n+4):hover { background-color: #2844c8; color: #f8de00; }
 
 nav ul {
-margin: 0;
-padding: 0;
-}
-span#title {
-    font-size: 100px;
-/*
-Kaushan Script
-Joti One
-http://www.dafont.com/deborstel-brush.font?text=Przedszkole+nr+241+Trojdenek&fpp=100&back=theme
-http://www.dafont.com/font-comment.php?file=bolide&text=Przedszkole+nr+241+Trojdenek&fpp=100&back=theme
-
-
- Fredericka the Great
-Cabin Sketch
-Monoton
- */
+    margin: 0;
+    padding: 0;
 }
 
 *|*:link {
@@ -228,11 +230,20 @@ Monoton
 text-align: right;
 }
 
-#big-logo {
-padding-top: 32px;
- max-width: none;
-   height: 150px;
+#main-logo {
+    padding-top: 32px;
+}
+
+#post-logo, #main-logo {
+    font-size: 0;
+    max-width: none;
+    height: 150px;
     width: 150px;
+}
+
+
+body.post article header h1 {
+padding-top: 0;
 }
 
 
@@ -275,4 +286,9 @@ brązowy #4f2500
 	border-top: 18px double #000;
 	border-bottom: 6px solid #000;
 	font-size:0;
+}
+
+
+@media screen and (max-width: 865px) {
+.hide-kids { display: none !important; }
 }

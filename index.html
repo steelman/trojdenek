@@ -2,6 +2,7 @@
 <html>
 <!--
 TODO: sitemap https://support.google.com/webmasters/answer/156184
+TODO: Wyrównianie w pionie h4 w aktualnościach i menu
 -->
   <head>
     <title>Trojdenek - Przedszkole nr 241</title>
@@ -11,25 +12,13 @@ TODO: sitemap https://support.google.com/webmasters/answer/156184
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
-  <body class="wrap">
+  <body class="wrap main">
     <header>
       <div class="grid">
-	<!-- <nav class="unit two-thirds center-on-mobiles show-on-mobiles" id="grupy"> -->
-	<!--   <ul> -->
-	<!--     <li>Krasnale</li> -->
-	<!--     <li>Misie</li> -->
-	<!--     <li>Słoneczka</li> -->
-	<!--     <li>Tropiciele</li> -->
-	<!--   </ul> -->
-	<!-- </nav> -->
-	<!-- <span id="title">Trojdenek</span> -->
 	<div class="unit one-third center-on-mobiles">
-	  <h1>
-	    <a href="/">
-	      <span>Przedszkole nr 241</span>
-	      <img id="big-logo" alt="logo" src="obrazy/logo.png">
+	    <a href="/trojdenek">
+	      <img id="main-logo" alt="Przedszkole nr 241" src="obrazy/logo.png">
 	    </a>
-	  </h1>
 	</div>
 	<nav class="unit two-thirds" id="grupy">
 	  <ul>
@@ -44,8 +33,8 @@ TODO: sitemap https://support.google.com/webmasters/answer/156184
     <div id="foobar" class="grid">
       <div  id="content" class="unit four-fifths">
 	<div id="news">
-	  <h1 style="padding-top: 0;">Aktualności</h2>
-	  <section>
+	  <h1 style="padding-top: 0;">Aktualności</h1>
+	  <section class="depressed">
 	    <h4>Informacja</h4>
 	    <p>Opublikowano: 2014-09-24 00:25</p>
 	    <p>
@@ -60,7 +49,7 @@ TODO: sitemap https://support.google.com/webmasters/answer/156184
 	    </p>
 	    <a href="#" class="read-more">Więcej&hellip;</a>
 	  </section>
-	  <section>
+	  <section class="depressed">
 	    <h4>Informacja</h4>
 	    <p>Opublikowano: 2014-09-24 00:25</p>
 	    <p>
@@ -117,7 +106,7 @@ Numer przedszkola? Dwa - cztery - jeden!
 	    <input class="unit one-fifth search-button" type="submit" name="submit" value="">
 	  </fieldset>
 	</form>
-	<div id="menu">
+	<div id="menu" class="depressed">
 	<h4>Menu</h4>
 	<ul>
 	  <li class="current"><a href="#">Aktualności</a></li>
@@ -132,7 +121,7 @@ Numer przedszkola? Dwa - cztery - jeden!
 	  <li><a href="#">Rada Rodziców</a></li>
 	  <li><a href="#">1%</a></li>
 	  <li class=""><a href="#">BIP</a></li>
-	  <li><a href="/kolofon.html">Kolofon</a></li>
+	  <li><a href="/trojdenek/kolofon.html">Kolofon</a></li>
 	</ul>
 	</div>
       </aside>
@@ -140,18 +129,18 @@ Numer przedszkola? Dwa - cztery - jeden!
     <footer>
       <div class="grid">
 	<div class="unit four-fifths grid">
-	  <div class="unit one-fifth" id="adres">
+	  <address id="adres" class="unit one-fourth">
 	    Przedszkole nr 241<br>
 	    ul. Księcia Trojdena 5B<br>
 	    02-109 Warszawa<br>
 	    tel. <a href="tel:+48228234119">+48-22-823-41-19</a>
-	  </div>
-	  <div class="unit four-fifths">
-	    <img src="obrazy/443.gif" style="max-width: none;">
+	  </address>
+	  <div class="unit three-fourths hide-on-mobiles">
+	    <img src="obrazy/443.gif" alt="dzieci trzymają się za ręce" style="max-width: 110%;margin-left: -38px">
 	  </div>
 	</div>
 	<div class="unit one-fifth">
-	  <img class="pixelart" src="obrazy/klocki42.png" alt="klocki" style="position: relative; top: -84px; left: 10px;">
+	  <img class="hide-on-mobiles pixelart" src="obrazy/klocki42.png" alt="klocki" style="position: relative; top: -84px; left: 10px;">
 	</div>
       </div>
     </footer>
